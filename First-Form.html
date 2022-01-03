@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- All forms start with a <form> element, like this: -->
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+    <style>
+      form {
+        /* Center the form on the page */
+        margin: 0 auto;
+        width: 500px;
+        /* Form outline */
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      form li + li {
+        margin-top: 1em;
+      }
+
+      label {
+        /* Uniform size & alignment */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+
+      input,
+      textarea {
+        /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+        font: 1em sans-serif;
+
+        /* Uniform text field size */
+        width: 300px;
+        box-sizing: border-box;
+
+        /* Match form field borders */
+        border: 1px solid #999;
+      }
+
+      input:focus,
+      textarea:focus {
+        /* Additional highlight for focused elements */
+        border-color: #000;
+      }
+
+      textarea {
+        /* Align multiline text fields with their labels */
+        vertical-align: top;
+
+        /* Provide space to type some text */
+        height: 5em;
+      }
+
+      .button {
+        /* Align buttons with the text fields */
+        padding-left: 90px; /* same size as the label elements */
+      }
+
+      button {
+        /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+        margin-left: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <!-- The `for` attribute takes the `id` of the input as its value -- this is how to associate a form control with a label -->
+          <label for="name">Name:</label>
+          <!-- On the <input> element, the most important attribute is the type attribute. 
+          This attribute is extremely important because it defines the way the <input> element appears and behaves. -->
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="email">Email:</label>
+          <input type="emial" id="email" name="user_email" />
+        </li>
+        <li>
+          <label for="message">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li>
+          <!-- The <button> element also accepts a type attribute — this accepts one of three values: submit, reset, or button. -->
+          <button type="submit">Send your message</button>
+          <!-- A click on a submit button (the default value) sends the form's data to the web page defined by the action attribute of the <form> element. -->
+          <!-- A click on a button button does... nothing! That sounds silly, but it's amazingly useful for building custom buttons — you can define their chosen functionality with JavaScript. -->
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>

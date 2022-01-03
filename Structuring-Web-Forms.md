@@ -2,25 +2,25 @@
 
 ## The `<form>` element
 
-The `<form>` element is used to declare a new form. A <form> cannot be declared
-within another form. The content of the form, such as form controls, are nested
-within the
+The `<form>` element is used to declare a new form. A `<form>` cannot be
+declared within another form. The content of the form, such as form controls,
+are nested within the
 
 `<form>` tags.
 
 ## The `<fieldset>` and `<legend>` elements
 
-We use the <fieldset> element to create groups of form controls, and we can
-attach a corresponding <legend> element below the opening <fieldset> tag to
+We use the `<fieldset>` element to create groups of form controls, and we can
+attach a corresponding `<legend>` element below the opening `<fieldset>` tag to
 formally describe the purpose of the grouping.
 
-  <form> <fieldset> <legend>Fruit juice size</legend> <p>
-  <input type="radio" name="size" id="size_1" value="small">
-  <label for="size_1">Small</label> </p> <p>
-  <input type="radio" name="size" id="size_2" value="medium">
-  <label for="size_2">Medium</label> </p> <p>
-  <input type="radio" name="size" id="size_3" value="large">
-  <label for="size_3">Large</label> </p> </fieldset></form>
+    <form> <fieldset> <legend>Fruit juice size</legend> <p>
+    <input type="radio" name="size" id="size_1" value="small">
+    <label for="size_1">Small</label> </p> <p>
+    <input type="radio" name="size" id="size_2" value="medium">
+    <label for="size_2">Medium</label> </p> <p>
+    <input type="radio" name="size" id="size_3" value="large">
+    <label for="size_3">Large</label> </p> </fieldset></form>
 
 ## The `<label>` element
 

@@ -14,13 +14,23 @@ We use the `<fieldset>` element to create groups of form controls, and we can
 attach a corresponding `<legend>` element below the opening `<fieldset>` tag to
 formally describe the purpose of the grouping.
 
-    <form> <fieldset> <legend>Fruit juice size</legend> <p>
-    <input type="radio" name="size" id="size_1" value="small">
-    <label for="size_1">Small</label> </p> <p>
-    <input type="radio" name="size" id="size_2" value="medium">
-    <label for="size_2">Medium</label> </p> <p>
-    <input type="radio" name="size" id="size_3" value="large">
-    <label for="size_3">Large</label> </p> </fieldset></form>
+    <form>
+      <fieldset>
+        <legend>Fruit juice size</legend>
+        <p>
+          <input type="radio" name="size" id="size_1" value="small">
+          <label for="size_1">Small</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="medium">
+          <label for="size_2">Medium</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_3" value="large">
+          <label for="size_3">Large</label>
+        </p>
+      </fieldset>
+    </form>
 
 ## The `<label>` element
 
@@ -30,12 +40,15 @@ widget. This is the most important element if you want to build accessible forms
 along with any related instructions, as well as it being useful for sighted
 users
 
-`<label for="name">Name:</label> <input type="text" id="name" name="user_name">`
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
 
 Here we associate the label with the input via the `for` attribute. However, we
 can also nest our input within the label tags:
 
-`<label for="name"> Name: <input type="text" id="name" name="user_name"> </label>`
+    <label for="name">
+      Name: <input type="text" id="name" name="user_name">
+    </label>
 
 Another advantage of properly set up labels is that you can click or tap the
 label to activate the corresponding widget.
